@@ -39,8 +39,8 @@ public class Driver
 	}
 	static String binToHex(String binStr)
 	{
-		anyBaseToDec(binStr, 2);
-		decToAnyBase(anyBaseToDec(binStr, 2), 16);
-		return decToAnyBase(anyBaseToDec(binStr, 2), 16);
+		int decimalNumber = anyBaseToDec(binStr, 2);
+		String hexNumber = decToAnyBase(decimalNumber, 16);
+		return hexNumber;
 	}
 }
